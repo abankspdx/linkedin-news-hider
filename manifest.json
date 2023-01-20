@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Linkedin News Hider",
+  "version": "1.0",
+
+  "description": "Hide the Linkedin News section",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["hide.js"]
+    }
+  ]
+
+}
+
